@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: aqua;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 350px;
+}
+
+.header__title {
+  background-color: rgb(87, 91, 94);
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.header__perfil {
+  /* width: 50%; */
+  margin: 0 auto;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil__foto {
+  /* width: 100%; */
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    /* background-color: rgba(5, 38, 72, 0.924); */
+    margin-top: 5px;
+  }
+
+  .header__title {
+    background-color: steelblue;
+    font-size: 20px;
+    color: #0a0909;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .header__perfil {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+  }
+
+  .perfil__foto {
+    width: 150px;
+    height: 200px;
+    /* border-radius: 5px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(5, 38, 72, 0.924); */
+    margin-top: 5px;
+  }
+
+  .header__title {
+    background-color: steelblue;
+    font-size: 20px;
+    color: #0a0909;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .header__perfil {
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 5px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .perfil__foto {
+    /* width: 100%; */
+    /* border-radius: 5px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
