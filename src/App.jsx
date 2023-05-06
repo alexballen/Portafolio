@@ -1,10 +1,15 @@
-import Home from "./component/Home";
+import Nav from "./component/Nav";
+import AcercaDeMi from "./component/AcercaDeMi";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Home />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<AcercaDeMi />} />
+      </Routes>
     </>
   );
 }
