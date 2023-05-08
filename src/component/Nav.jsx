@@ -22,7 +22,7 @@ const Nav = () => {
             )}
           </nav>
           <section className={`${s.menu} ${isOpen ? s.show : ""}`}>
-            <div className={s.menu__item}>
+            <div id={s["acerca"]} className={s.menu__item}>
               <a className={s.menu__link} href="/">
                 Acerca de mí
               </a>
@@ -44,7 +44,6 @@ const Nav = () => {
             </div>
           </section>
         </header>
-        <div className={s.slide}></div>
       </main>
     </>
   );

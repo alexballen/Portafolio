@@ -40,6 +40,21 @@
   padding: 5px;
 }
 
+@media (max-width: 773px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+  #acerca {
+    display: flex;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 90%;
