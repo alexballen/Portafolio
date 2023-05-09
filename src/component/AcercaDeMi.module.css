@@ -85,12 +85,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* .container {
+    transform: translateY(0) !important;
+    transition: transform 0.3s ease;
+  } */
+
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10px;
   }
 
   .header__title {
