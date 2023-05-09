@@ -1,5 +1,4 @@
 import Nav from "./component/Nav";
-import AcercaDeMi from "./component/AcercaDeMi";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -8,7 +7,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<AcercaDeMi />} />
+        <Route path="/" />
       </Routes>
     </>
   );
