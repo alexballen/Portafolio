@@ -1,8 +1,9 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import s from "./Nav.module.css";
 import AcercaDeMi from "./AcercaDeMi";
+import Tecnologias from "./Tecnologias";
+import s from "./Nav.module.css";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,36 +11,44 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const closeMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <main>
       <div className={s.container}>
         <section>
           <nav>
-            <section>
-              <div className={s.container__title}>
-                <h1>Portafolio</h1>
-                <div className={s.hamburger} onClick={toggleMenu}>
-                  {isOpen ? (
-                    <MenuOpenIcon fontSize="large" className={s.icon} />
-                  ) : (
-                    <MenuIcon fontSize="large" />
-                  )}
-                </div>
+            <div className={s.container__nav}>
+              <h1 className={s.title}>Portafolio</h1>
+              <div className={s.hamburguer__menu} onClick={toggleMenu}>
+                {isOpen ? (
+                  <MenuOpenIcon
+                    fontSize="large"
+                    className={s.hamburguer__icon}
+                  />
+                ) : (
+                  <MenuIcon fontSize="large" />
+                )}
               </div>
-            </section>
-            <section>
-              <div className={`${s.menu} ${isOpen ? s.show : ""}`}>
-                <div id={s["acerca"]} className={s.menu__item}>
+              <div
+                className={`${s.hamburguer__menu__items} ${
+                  isOpen ? s.show : ""
+                }`}
+              >
+                <div className={s.menu__item}>
                   <a className={s.menu__link} href="/">
                     Acerca de mí
                   </a>
                 </div>
-                <div className={s.menu__item}>
-                  <a className={s.menu__link} href="#tecnologias">
+                <div onClick={() => closeMenu()} className={s.menu__item}>
+                  <a className={s.menu__link} href="/tecnologias">
                     Tecnologias
                   </a>
                 </div>
-                <div className={s.menu__item}>
+                <div onClick={() => closeMenu()} className={s.menu__item}>
                   <a className={s.menu__link} href="#services">
                     Services
                   </a>
@@ -50,14 +59,21 @@ const Nav = () => {
                   </a>
                 </div>
               </div>
-            </section>
+            </div>
           </nav>
         </section>
-        <section>
-          <div className={isOpen ? s.desplazar : ""}>
+        {/* <section>
+          <div
+            className={isOpen ? s.slide__content : s.slide__content__retract}
+          >
             <AcercaDeMi />
           </div>
-        </section>
+        </section> */}
+        {/* <section>
+          <div>
+            <Tecnologias />
+          </div>
+        </section> */}
       </div>
     </main>
   );
