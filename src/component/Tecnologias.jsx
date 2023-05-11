@@ -1,56 +1,54 @@
-import icohtml from "../assets/html.png";
-import icocss from "../assets/css.png";
-import icojs from "../assets/js.png";
-import iconode from "../assets/node.png";
-import icoreact from "../assets/react.png";
-import icoredux from "../assets/redux.png";
-import icopostgreSQL from "../assets/postgreSQL.png";
-import icosequelize from "../assets/sequelize.png";
-import icogithub from "../assets/github.png";
-import icoscrum from "../assets/scrum.png";
-import icofigma from "../assets/figma.png";
-import icotrello from "../assets/trello.png";
-import s from "./AcercaDeMi.module.css";
+import iconhtml from "../assets/html.png";
+import iconcss from "../assets/css.png";
+import iconjs from "../assets/js.png";
+import iconnode from "../assets/node.png";
+import iconreact from "../assets/react.png";
+import iconredux from "../assets/redux.png";
+import iconpostgreSQL from "../assets/postgreSQL.png";
+import iconsequelize from "../assets/sequelize.png";
+import icongithub from "../assets/github.png";
+import iconscrum from "../assets/scrum.png";
+import iconfigma from "../assets/figma.png";
+import icontrello from "../assets/trello.png";
+import s from "./Tecnologias.module.css";
 
 const Tecnologias = () => {
-  const iconos = [
-    { imagen: icohtml, alt: "icohtml", texto: "HTML" },
-    { imagen: icocss, alt: "icocss", texto: "CSS" },
-    { imagen: icojs, alt: "icojs", texto: "JavaScript" },
-    { imagen: iconode, alt: "iconode", texto: "Node JS" },
-    { imagen: icoreact, alt: "icoreact", texto: "React" },
-    { imagen: icoredux, alt: "icoredux", texto: "Redux" },
-    { imagen: icopostgreSQL, alt: "icopostgreSQL", texto: "PostgreSQL" },
-    { imagen: icosequelize, alt: "icosequelize", texto: "Sequelize" },
-    { imagen: icogithub, alt: "icogithub", texto: "GitHub" },
-    { imagen: icoscrum, alt: "icoscrum", texto: "SCRUM" },
-    { imagen: icofigma, alt: "icofigma", texto: "Figma" },
-    { imagen: icotrello, alt: "icotrello", texto: "Trello" },
+  const icons = [
+    { image: iconhtml, alt: "icohtml", text: "HTML" },
+    { image: iconcss, alt: "icocss", text: "CSS" },
+    { image: iconjs, alt: "icojs", text: "JavaScript" },
+    { image: iconnode, alt: "iconode", text: "Node JS" },
+    { image: iconreact, alt: "icoreact", text: "React" },
+    { image: iconredux, alt: "icoredux", text: "Redux" },
+    { image: iconpostgreSQL, alt: "icopostgreSQL", text: "PostgreSQL" },
+    { image: iconsequelize, alt: "icosequelize", text: "Sequelize" },
+    { image: icongithub, alt: "icogithub", text: "GitHub" },
+    { image: iconscrum, alt: "icoscrum", text: "SCRUM" },
+    { image: iconfigma, alt: "icofigma", text: "Figma" },
+    { image: icontrello, alt: "icotrello", text: "Trello" },
   ];
   return (
     <main>
       <div className={s.container}>
         <section>
-          <div className={s.container__habilidades}>
+          <div className={s.container__technologies}>
             <header>
-              <div className={s.habilidades}>
-                <p id="tecnologias" className={s.habilidades__title}>
+              <div className={s.container__title}>
+                <p id="tecnologias" className={s.title}>
                   Tecnologias
                 </p>
               </div>
             </header>
-            <div className={s.container__icon}>
-              {iconos.map((icono, index) => (
-                <div className={s.icon} key={index}>
-                  <img
-                    className={s.icotecnologias}
-                    src={icono.imagen}
-                    alt={icono.alt}
-                  />
-                  <p>{icono.texto}</p>
-                </div>
-              ))}
-            </div>
+            <figure>
+              <div className={s.container__icons}>
+                {icons.map((icon, index) => (
+                  <div className={s.container__icon} key={index}>
+                    <img className={s.icon} src={icon.image} alt={icon.alt} />
+                    <p>{icon.text}</p>
+                  </div>
+                ))}
+              </div>
+            </figure>
           </div>
         </section>
       </div>
