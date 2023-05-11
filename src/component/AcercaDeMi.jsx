@@ -5,24 +5,26 @@ const AcercaDeMi = () => {
   return (
     <main>
       <div className={s.container}>
-        <header>
-          <div className={s.header}>
-            <figure>
-              <div className={s.header__perfil}>
-                <img
-                  id="imagenperfil"
-                  className={s.perfil__foto}
-                  src={fotoPerfil}
-                  alt="Imagen de perfil"
-                />
-              </div>
-            </figure>
-            <p className={s.header__title}>
-              Bienvenidos a mi Portafolio, soy Alexander Ballen Desarrollador
-              Web FrontEnd / BackEnd
-            </p>
-          </div>
-        </header>
+        <section>
+          <header>
+            <div className={s.header}>
+              <figure>
+                <div className={s.header__perfil}>
+                  <img
+                    className={s.perfil__foto}
+                    src={fotoPerfil}
+                    alt="Imagen de perfil"
+                  />
+                </div>
+              </figure>
+              <p className={s.header__title}>
+                Bienvenidos a mi Portafolio, soy Alexander Ballen Desarrollador
+                Web FrontEnd / BackEnd
+              </p>
+            </div>
+          </header>
+        </section>
+        <hr />
         <section>
           <div className={s.container__habilidades}>
             <header>
@@ -46,6 +48,7 @@ const AcercaDeMi = () => {
             </p>
           </div>
         </section>
+        <hr />
       </div>
     </main>
   );
