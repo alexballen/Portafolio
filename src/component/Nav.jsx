@@ -22,17 +22,23 @@ const Nav = () => {
         <section>
           <nav>
             <div className={s.container__nav}>
-              <h1 className={s.title}>Portafolio</h1>
-              <div className={s.hamburguer__menu} onClick={toggleMenu}>
-                {isOpen ? (
-                  <MenuOpenIcon
-                    fontSize="large"
-                    className={s.hamburguer__icon}
-                  />
-                ) : (
-                  <MenuIcon fontSize="large" />
-                )}
-              </div>
+              <header>
+                <div>
+                  <h1 className={s.title}>Portafolio</h1>
+                </div>
+              </header>
+              <figure>
+                <div className={s.hamburguer__menu} onClick={toggleMenu}>
+                  {isOpen ? (
+                    <MenuOpenIcon
+                      fontSize="large"
+                      className={s.hamburguer__icon}
+                    />
+                  ) : (
+                    <MenuIcon fontSize="large" />
+                  )}
+                </div>
+              </figure>
               <div
                 className={`${s.hamburguer__menu__items} ${
                   isOpen ? s.show : ""
@@ -49,8 +55,8 @@ const Nav = () => {
                   </a>
                 </div>
                 <div onClick={() => closeMenu()} className={s.menu__item}>
-                  <a className={s.menu__link} href="#services">
-                    Services
+                  <a className={s.menu__link} href="/proyectos">
+                    Proyectos
                   </a>
                 </div>
                 <div className={s.menu__item}>
