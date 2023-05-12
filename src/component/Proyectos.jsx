@@ -18,7 +18,7 @@ const Proyectos = () => {
               </div>
             </header>
             <figure>
-              {/* <div className={s.container__images}>
+              <div className={s.container__images}>
                 {images.map((imag, index) => (
                   <div className={s.container__image} key={index}>
                     <img className={s.image} src={imag.image} alt={imag.alt} />
@@ -30,7 +30,7 @@ const Proyectos = () => {
                     </div>
                   </div>
                 ))}
-              </div> */}
+              </div>
             </figure>
           </div>
         </section>
