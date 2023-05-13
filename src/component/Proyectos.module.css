@@ -16,12 +16,14 @@
 }
 
 .container__title {
-  /* background-color: tomato; */
+  background-color: rgba(24, 87, 87, 0.42);
+  border-radius: 3px;
 }
 
 .title {
-  text-align: start;
-  font-size: 60px;
+  font-size: 30px;
+  margin-left: 10px;
+  color: #fff;
 }
 
 .container__images {
@@ -91,6 +93,15 @@
 }
 
 @media (max-width: 999px) {
+  .container__title {
+    border-radius: 3px 3px 3px 10px;
+  }
+
+  .title {
+    text-align: center;
+    margin-left: 0px;
+  }
+
   .container__image {
     margin-bottom: 20px;
   }
