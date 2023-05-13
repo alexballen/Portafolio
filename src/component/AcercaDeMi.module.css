@@ -9,148 +9,98 @@
   margin-top: 10px;
 }
 
-.header {
+.profile__title__container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.header__perfil {
+.title__image__container {
   width: 200px;
   height: 250px;
 }
 
-.perfil__foto {
+.title__image {
   width: 200px;
   height: 250px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  padding: 5px;
 }
 
-.header__title {
-  font-size: 40px;
-  color: #701111;
+.image__title {
+  font-size: 30px;
+  color: #fff;
   text-align: center;
   width: 50%;
+  background-color: rgba(24, 87, 87, 0.42);
+  border-radius: 3px;
 }
 
-.container__habilidades {
+.skills__container {
   width: 90%;
   margin: 0 auto;
 }
 
-.habilidades {
+.skills__title__container {
   margin-top: 10px;
   font-size: 30px;
 }
 
-.habilidades__title {
+.skills__title {
   display: flex;
   justify-content: start;
 }
 
-hr {
-  margin-top: 10px;
-}
-
-.habilidades__paragraph {
+.skills__paragraph {
   margin-top: 10px;
   font-size: 23px;
   text-align: start;
   line-height: 1.5;
 }
 
+hr {
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .header__perfil {
+  .title__image__container {
     width: 150px;
     height: 200px;
   }
 
-  .perfil__foto {
+  .title__image {
     width: 150px;
     height: 200px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 3px;
-    border-bottom-right-radius: 3px;
   }
 
-  .header__title {
+  .image__title {
     font-size: 30px;
-    color: #701111;
-    text-align: center;
-    width: 50%;
-  }
-
-  .habilidades {
-    margin-top: 10px;
-    font-size: 30px;
-  }
-
-  .habilidades__title {
-    display: flex;
-    justify-content: start;
-  }
-
-  .habilidades__paragraph {
-    margin-top: 10px;
-    text-align: start;
-    line-height: 1.5;
   }
 }
 
 @media (max-width: 425px) {
-  .header {
+  .profile__title__container {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
   }
 
-  .header__perfil {
+  .title__image__container {
     width: 130px;
     height: 170px;
   }
 
-  .perfil__foto {
+  .title__image {
     width: 130px;
     height: 170px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 3px;
-    border-bottom-right-radius: 3px;
   }
 
-  .header__title {
+  .image__title {
     font-size: 25px;
-    color: #701111;
-    text-align: center;
     width: 100%;
     margin-top: 10px;
-  }
-
-  .habilidades {
-    margin-top: 10px;
-    font-size: 30px;
-  }
-
-  .habilidades__title {
-    display: flex;
-    justify-content: start;
-  }
-
-  .habilidades__paragraph {
-    margin-top: 10px;
-    text-align: start;
-    line-height: 1.5;
   }
 }

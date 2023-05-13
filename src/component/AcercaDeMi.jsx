@@ -7,17 +7,17 @@ const AcercaDeMi = () => {
       <div className={s.container}>
         <section>
           <header>
-            <div className={s.header}>
+            <div className={s.profile__title__container}>
               <figure>
-                <div className={s.header__perfil}>
+                <div className={s.title__image__container}>
                   <img
-                    className={s.perfil__foto}
+                    className={s.title__image}
                     src={fotoPerfil}
                     alt="Imagen de perfil"
                   />
                 </div>
               </figure>
-              <p className={s.header__title}>
+              <p className={s.image__title}>
                 Bienvenidos a mi Portafolio, soy Alexander Ballen Desarrollador
                 Web FrontEnd / BackEnd
               </p>
@@ -26,13 +26,13 @@ const AcercaDeMi = () => {
         </section>
         <hr />
         <section>
-          <div className={s.container__habilidades}>
+          <div className={s.skills__container}>
             <header>
-              <div className={s.habilidades}>
-                <p className={s.habilidades__title}>Siempre</p>
+              <div className={s.skills__title__container}>
+                <p className={s.skills__title}>Siempre</p>
               </div>
             </header>
-            <p className={s.habilidades__paragraph}>
+            <p className={s.skills__paragraph}>
               Me llamo la atención el desarrollo, laborando en el mundo IT como
               Analista de Soporte encontré gusto por la programación y bueno
               decidí apostar por este camino y aquí estoy ya graduado del
@@ -48,7 +48,6 @@ const AcercaDeMi = () => {
             </p>
           </div>
         </section>
-        <hr />
       </div>
     </main>
   );
