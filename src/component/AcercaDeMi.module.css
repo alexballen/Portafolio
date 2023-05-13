@@ -16,11 +16,6 @@
   align-items: center;
 }
 
-.title__image__container {
-  width: 200px;
-  height: 250px;
-}
-
 .title__image {
   width: 200px;
   height: 250px;
@@ -45,14 +40,9 @@
   margin: 0 auto;
 }
 
-.skills__title__container {
+.skills__title {
   margin-top: 10px;
   font-size: 30px;
-}
-
-.skills__title {
-  display: flex;
-  justify-content: start;
 }
 
 .skills__paragraph {
@@ -67,11 +57,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .title__image__container {
-    width: 150px;
-    height: 200px;
-  }
-
   .title__image {
     width: 150px;
     height: 200px;
@@ -86,11 +71,6 @@ hr {
   .profile__title__container {
     display: flex;
     flex-direction: column;
-  }
-
-  .title__image__container {
-    width: 130px;
-    height: 170px;
   }
 
   .title__image {

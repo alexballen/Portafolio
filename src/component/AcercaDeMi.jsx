@@ -9,13 +9,11 @@ const AcercaDeMi = () => {
           <header>
             <div className={s.profile__title__container}>
               <figure>
-                <div className={s.title__image__container}>
-                  <img
-                    className={s.title__image}
-                    src={fotoPerfil}
-                    alt="Imagen de perfil"
-                  />
-                </div>
+                <img
+                  className={s.title__image}
+                  src={fotoPerfil}
+                  alt="Imagen de perfil"
+                />
               </figure>
               <p className={s.image__title}>
                 Bienvenidos a mi Portafolio, soy Alexander Ballen Desarrollador
@@ -28,9 +26,7 @@ const AcercaDeMi = () => {
         <section>
           <div className={s.skills__container}>
             <header>
-              <div className={s.skills__title__container}>
-                <p className={s.skills__title}>Siempre</p>
-              </div>
+              <p className={s.skills__title}>Siempre</p>
             </header>
             <p className={s.skills__paragraph}>
               Me llamo la atención el desarrollo, laborando en el mundo IT como
