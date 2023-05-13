@@ -1,8 +1,8 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import AcercaDeMi from "./AcercaDeMi";
-import Tecnologias from "./Tecnologias";
+//import AcercaDeMi from "./AcercaDeMi";
+//import Tecnologias from "./Tecnologias";
 import s from "./Nav.module.css";
 
 const Nav = () => {
@@ -21,10 +21,10 @@ const Nav = () => {
       <div className={s.container}>
         <section>
           <nav>
-            <div className={s.container__nav}>
+            <div className={s.nav__container}>
               <header>
                 <div>
-                  <h1 className={s.title}>Portafolio</h1>
+                  <h1 className={s.nav__title}>Portafolio</h1>
                 </div>
               </header>
               <figure>
@@ -40,7 +40,7 @@ const Nav = () => {
                 </div>
               </figure>
               <div
-                className={`${s.hamburguer__menu__items} ${
+                className={`${s.items__menu__container} ${
                   isOpen ? s.show : ""
                 }`}
               >
