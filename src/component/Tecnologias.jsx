@@ -31,19 +31,23 @@ const Tecnologias = () => {
     <main>
       <div className={s.container}>
         <section>
-          <div className={s.container__technologies}>
+          <div className={s.technologies__container}>
             <header>
-              <div className={s.container__title}>
-                <p id="tecnologias" className={s.title}>
+              <div className={s.technologies__title__container}>
+                <p id="tecnologias" className={s.technologies__title}>
                   Tecnologias
                 </p>
               </div>
             </header>
             <figure>
-              <div className={s.container__icons}>
+              <div className={s.technologies__icons__container}>
                 {icons.map((icon, index) => (
-                  <div className={s.container__icon} key={index}>
-                    <img className={s.icon} src={icon.image} alt={icon.alt} />
+                  <div className={s.technologies__icon__container} key={index}>
+                    <img
+                      className={s.technologies__icon}
+                      src={icon.image}
+                      alt={icon.alt}
+                    />
                     <p>{icon.text}</p>
                   </div>
                 ))}

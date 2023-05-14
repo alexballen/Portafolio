@@ -9,53 +9,50 @@
   margin-top: 10px;
 }
 
-.container__technologies {
-}
-
-.container__title {
+.technologies__title__container {
   background-color: rgba(24, 87, 87, 0.42);
   border-radius: 3px;
 }
 
-.title {
+.technologies__title {
   font-size: 30px;
   margin-left: 10px;
   color: #fff;
 }
 
-.container__icons {
+.technologies__icons__container {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.container__icon {
+.technologies__icon__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
 }
 
-.icon {
+.technologies__icon {
   width: 80px;
   height: 80px;
   padding: 5px;
 }
 
 @media (max-width: 768px) {
-  .container__title {
+  .technologies__title__container {
     border-radius: 3px 3px 3px 10px;
   }
 
-  .title {
+  .technologies__title {
     text-align: center;
     margin-left: 0px;
   }
 }
 
 @media (max-width: 425px) {
-  .icon {
+  .technologies__icon {
     width: 50px;
     height: 50px;
   }
