@@ -23,9 +23,7 @@ const Nav = () => {
           <nav>
             <div className={s.nav__container}>
               <header>
-                <div>
-                  <h1 className={s.nav__title}>Portafolio</h1>
-                </div>
+                <p className={s.nav__title}>Portafolio</p>
               </header>
               <figure>
                 <div className={s.hamburguer__menu} onClick={toggleMenu}>
