@@ -58,8 +58,8 @@ const Nav = () => {
                   </a>
                 </div>
                 <div className={s.menu__item}>
-                  <a className={s.menu__link} href="#contact">
-                    Contact
+                  <a className={s.menu__link} href="/contacto">
+                    Contacto
                   </a>
                 </div>
               </div>
