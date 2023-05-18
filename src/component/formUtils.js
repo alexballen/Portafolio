@@ -26,6 +26,8 @@ export const ValidatorFunction = (form) => {
   return errors;
 };
 
+const validatorSubmit = () => {};
+
 export const handleSubmit = (
   e,
   formContact,
@@ -35,20 +37,21 @@ export const handleSubmit = (
   message
 ) => {
   e.preventDefault();
+
   if (!formContact.name) {
     alert("Debes ingresar un Nombre");
   } else if (formContact.name.length < 4) {
-    alert("Debes ingresar minimo 4 caracteres");
+    alert("Debes ingresar minimo 4 caracteres en el campo Nombre");
   } else if (formContact.name.length > 40) {
-    alert("Debes ingresar menos de 40 caracteres");
+    alert("Debes ingresar menos de 40 caracteres en el campo Nombre");
   } else if (!formContact.email) {
     alert("Debes ingresar un Email");
   } else if (!formContact.message) {
     alert("Debes ingresar un Mensaje");
   } else if (formContact.message.length < 50) {
-    alert("Debes ingresar minimo 50 caracteres");
+    alert("Debes ingresar minimo 50 caracteres en el campo Mensaje");
   } else if (formContact.message.length > 999) {
-    alert("Debes ingresar maximo 1000 caracteres");
+    alert("Debes ingresar maximo 1000 caracteres en el campo Mensaje");
   } else {
     emailjs
       .send(
@@ -72,4 +75,18 @@ export const handleSubmit = (
       );
     alert("Mensaje enviado con exito");
   }
+};
+
+export const handleOnchange = (
+  e,
+  formContact,
+  setFormContact,
+  setError,
+  validator
+) => {
+  setFormContact({
+    ...formContact,
+    [e.target.name]: e.target.value,
+  });
+  setError(validator(formContact));
 };
