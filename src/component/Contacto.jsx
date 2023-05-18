@@ -1,6 +1,22 @@
+import { useState } from "react";
+import {
+  ValidatorFunction,
+  handleSubmit,
+  handleOnchange,
+} from "./formUtils.js";
 import s from "./Contacto.module.css";
 
 const Contacto = () => {
+  const [formContact, setFormContact] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [error, setError] = useState({});
+  console.log(error);
+  const { name, email, message } = formContact;
+
   return (
     <main>
       <div className={s.container}>
@@ -11,22 +27,99 @@ const Contacto = () => {
                 <p className={s.contact__title}>Contacto</p>
               </div>
             </header>
-            <form>
+            <form
+              onSubmit={(e) =>
+                handleSubmit(
+                  e,
+                  formContact,
+                  setFormContact,
+                  name,
+                  email,
+                  message
+                )
+              }
+            >
               <div className={s.contact__form__container}>
                 <div className={s.input__container}>
                   <label htmlFor="name">Nombre</label>
-                  <input type="text" />
+                  <input
+                    value={name}
+                    name="name"
+                    type="text"
+                    onChange={(e) =>
+                      handleOnchange(
+                        e,
+                        formContact,
+                        setFormContact,
+                        setError,
+                        ValidatorFunction
+                      )
+                    }
+                  />
+                  {error.name ? (
+                    <h4>
+                      <small>{error.name}</small>
+                    </h4>
+                  ) : (
+                    false
+                  )}
                 </div>
                 <div className={s.input__container}>
                   <label htmlFor="mail">Correo</label>
-                  <input type="text" />
+                  <input
+                    value={email}
+                    name="email"
+                    type="text"
+                    onChange={(e) =>
+                      handleOnchange(
+                        e,
+                        formContact,
+                        setFormContact,
+                        setError,
+                        ValidatorFunction
+                      )
+                    }
+                  />
+                  {error.email ? (
+                    <h4>
+                      <small>{error.email}</small>
+                    </h4>
+                  ) : (
+                    false
+                  )}
                 </div>
                 <div className={s.input__container}>
                   <label htmlFor="message">Mensaje</label>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <textarea
+                    value={message}
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    onChange={(e) =>
+                      handleOnchange(
+                        e,
+                        formContact,
+                        setFormContact,
+                        setError,
+                        ValidatorFunction
+                      )
+                    }
+                  ></textarea>
+                  {error.message ? (
+                    <h4>
+                      <small>{error.message}</small>
+                    </h4>
+                  ) : (
+                    false
+                  )}
                 </div>
                 <div className={s.input__container}>
-                  <button className={s.button}>Enviar</button>
+                  <button
+                    className={s.button}
+                    disabled={Object.keys(error).length < 1 ? false : true}
+                  >
+                    Enviar
+                  </button>
                 </div>
               </div>
             </form>
