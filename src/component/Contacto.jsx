@@ -1,8 +1,9 @@
 import { useState } from "react";
 import {
-  ValidatorFunction,
   handleSubmit,
+  validatorSubmit,
   handleOnchange,
+  inputValidator,
 } from "./formUtils.js";
 import s from "./Contacto.module.css";
 
@@ -14,7 +15,7 @@ const Contacto = () => {
   });
 
   const [error, setError] = useState({});
-  console.log(error);
+
   const { name, email, message } = formContact;
 
   return (
@@ -31,11 +32,14 @@ const Contacto = () => {
               onSubmit={(e) =>
                 handleSubmit(
                   e,
+                  setError,
+                  validatorSubmit,
                   formContact,
-                  setFormContact,
                   name,
                   email,
-                  message
+                  message,
+                  setFormContact,
+                  error
                 )
               }
             >
@@ -49,10 +53,10 @@ const Contacto = () => {
                     onChange={(e) =>
                       handleOnchange(
                         e,
-                        formContact,
                         setFormContact,
+                        formContact,
                         setError,
-                        ValidatorFunction
+                        inputValidator
                       )
                     }
                   />
@@ -73,10 +77,10 @@ const Contacto = () => {
                     onChange={(e) =>
                       handleOnchange(
                         e,
-                        formContact,
                         setFormContact,
+                        formContact,
                         setError,
-                        ValidatorFunction
+                        inputValidator
                       )
                     }
                   />
@@ -98,10 +102,10 @@ const Contacto = () => {
                     onChange={(e) =>
                       handleOnchange(
                         e,
-                        formContact,
                         setFormContact,
+                        formContact,
                         setError,
-                        ValidatorFunction
+                        inputValidator
                       )
                     }
                   ></textarea>
