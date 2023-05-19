@@ -4,8 +4,20 @@ import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
   const images = [
-    { image: pf, alt: "proyecto final", text: "Proyecto Final" },
-    { image: pi, alt: "proyecto individual", text: "Proyecto Individual" },
+    {
+      image: pf,
+      alt: "proyecto final",
+      text: "Proyecto Final",
+      link: "https://hcouture-38643.web.app/",
+      target: "_blank",
+    },
+    {
+      image: pi,
+      alt: "proyecto individual",
+      text: "Proyecto Individual",
+      link: "https://countriesapp-r8zi.onrender.com/",
+      target: "_blank",
+    },
   ];
   return (
     <main>
@@ -28,7 +40,11 @@ const Proyectos = () => {
                     />
                     <p className={s.proyect__image__text}>{imag.text}</p>
                     <div className={s.image__overlay}>
-                      <a className={s.image__link} href="#">
+                      <a
+                        className={s.image__link}
+                        href={imag.link}
+                        target={imag.target}
+                      >
                         Visitar
                       </a>
                     </div>
