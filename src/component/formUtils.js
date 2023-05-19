@@ -1,10 +1,33 @@
 import emailjs from "@emailjs/browser";
 
-export const ValidatorFunction = (form) => {
+const emailjsFunction = (name, email, message, setFormContact) => {
+  emailjs
+    .send(
+      "service_817u2ok",
+      "contact_form",
+      { name, email, message },
+      "l4p47UmRCNzGrTGMi"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        setFormContact({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  alert("Mensaje enviado con exito");
+};
+
+export const inputValidator = (form) => {
   const errors = {};
 
   let nameRegex = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-
   let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!form.name.trim()) {
@@ -26,61 +49,10 @@ export const ValidatorFunction = (form) => {
   return errors;
 };
 
-const validatorSubmit = () => {};
-
-export const handleSubmit = (
-  e,
-  formContact,
-  setFormContact,
-  name,
-  email,
-  message
-) => {
-  e.preventDefault();
-
-  if (!formContact.name) {
-    alert("Debes ingresar un Nombre");
-  } else if (formContact.name.length < 4) {
-    alert("Debes ingresar minimo 4 caracteres en el campo Nombre");
-  } else if (formContact.name.length > 40) {
-    alert("Debes ingresar menos de 40 caracteres en el campo Nombre");
-  } else if (!formContact.email) {
-    alert("Debes ingresar un Email");
-  } else if (!formContact.message) {
-    alert("Debes ingresar un Mensaje");
-  } else if (formContact.message.length < 50) {
-    alert("Debes ingresar minimo 50 caracteres en el campo Mensaje");
-  } else if (formContact.message.length > 999) {
-    alert("Debes ingresar maximo 1000 caracteres en el campo Mensaje");
-  } else {
-    emailjs
-      .send(
-        "service_817u2ok",
-        "contact_form",
-        { name, email, message },
-        "l4p47UmRCNzGrTGMi"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormContact({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    alert("Mensaje enviado con exito");
-  }
-};
-
 export const handleOnchange = (
   e,
-  formContact,
   setFormContact,
+  formContact,
   setError,
   validator
 ) => {
@@ -89,4 +61,48 @@ export const handleOnchange = (
     [e.target.name]: e.target.value,
   });
   setError(validator(formContact));
+};
+
+export const validatorSubmit = (form, name, email, message, setFormContact) => {
+  const errors = {};
+
+  if (!form.name) {
+    errors.name = "Debes ingresar un Nombre";
+  } else if (form.name.length < 4) {
+    errors.name = "Debes ingresar minimo 4 caracteres en el campo Nombre";
+  } else if (form.name.length > 40) {
+    errors.name = "Debes ingresar menos de 40 caracteres en el campo Nombre";
+  }
+
+  if (!form.email) {
+    errors.email = "Debes ingresar un Email";
+  }
+
+  if (!form.message) {
+    errors.message = "Debes ingresar un Mensaje";
+  } else if (form.message.length < 50) {
+    errors.message = "Debes ingresar minimo 50 caracteres en el campo Mensaje";
+  } else if (form.message.length > 999) {
+    errors.message =
+      "Debes ingresar maximo 1000 caracteres en el campo Mensaje";
+  } else {
+    emailjsFunction(name, email, message, setFormContact);
+  }
+
+  return errors;
+};
+
+export const handleSubmit = (
+  e,
+  setError,
+  validator,
+  form,
+  name,
+  email,
+  message,
+  setFormContact
+) => {
+  e.preventDefault();
+
+  setError(validator(form, name, email, message, setFormContact));
 };
