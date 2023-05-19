@@ -1,4 +1,8 @@
 import fotoPerfil from "../assets/perfil.png";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+import gmail from "../assets/gmail.png";
+import whatsapp from "../assets/whatsapp.png";
 import s from "./AcercaDeMi.module.css";
 
 const AcercaDeMi = () => {
@@ -15,10 +19,61 @@ const AcercaDeMi = () => {
                   alt="Imagen de perfil"
                 />
               </figure>
-              <p className={s.image__title}>
-                Bienvenidos a mi Portafolio, soy Alexander Ballen Desarrollador
-                Web FrontEnd / BackEnd
-              </p>
+              <div className={s.title_container}>
+                <p className={s.image__title}>
+                  Bienvenidos a mi Portafolio, soy Alexander Ballen
+                  Desarrollador Web FrontEnd / BackEnd
+                </p>
+                <div className={s.icons_container}>
+                  <a
+                    href="https://www.linkedin.com/in/alexballen/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className={s.network_icon}
+                      src={linkedin}
+                      alt="icono linkedin"
+                    />
+                  </a>
+
+                  <a
+                    href="https://github.com/alexballen"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className={s.network_icon}
+                      src={github}
+                      alt="icono github"
+                    />
+                  </a>
+
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=alexballen53%40gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className={s.network_icon}
+                      src={gmail}
+                      alt="icono gmail"
+                    />
+                  </a>
+
+                  <a
+                    href="https://web.whatsapp.com/send?phone=+573218168368"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className={s.network_icon}
+                      src={whatsapp}
+                      alt="icono whatsapp"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </header>
         </section>
