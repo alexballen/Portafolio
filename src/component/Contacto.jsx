@@ -4,7 +4,7 @@ import {
   validatorSubmit,
   handleOnchange,
   inputValidator,
-} from "./formUtils.js";
+} from "./utilidadesContacto.js";
 import s from "./Contacto.module.css";
 
 const Contacto = () => {
