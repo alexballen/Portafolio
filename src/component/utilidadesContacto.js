@@ -75,7 +75,7 @@ export const validatorSubmit = (form, name, email, message, setFormContact) => {
   }
 
   if (!form.email) {
-    errors.email = "Debes ingresar un Email";
+    errors.email = "Debes ingresar un Correo Electronico";
   }
 
   if (!form.message) {
@@ -85,6 +85,10 @@ export const validatorSubmit = (form, name, email, message, setFormContact) => {
   } else if (form.message.length > 999) {
     errors.message =
       "Debes ingresar maximo 1000 caracteres en el campo Mensaje";
+  }
+
+  if (Object.keys(errors).length > 0) {
+    return errors;
   } else {
     emailjsFunction(name, email, message, setFormContact);
   }
@@ -103,6 +107,5 @@ export const handleSubmit = (
   setFormContact
 ) => {
   e.preventDefault();
-
   setError(validator(form, name, email, message, setFormContact));
 };
