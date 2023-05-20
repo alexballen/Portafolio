@@ -15,6 +15,7 @@ const Contacto = () => {
   });
 
   const [error, setError] = useState({});
+  console.log(error);
 
   const { name, email, message } = formContact;
 
