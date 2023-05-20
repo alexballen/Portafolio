@@ -11,7 +11,7 @@
 }
 
 .contact__title__container {
-  background-color: rgba(24, 87, 87, 0.42);
+  background-color: rgba(255, 68, 0, 0.8);
   border-radius: 3px;
 }
 
@@ -63,10 +63,15 @@ textarea {
 }
 
 .button {
-  background-color: rgba(24, 87, 87, 0.42);
+  background-color: rgba(255, 68, 0, 0.8);
   font-size: 25px;
   color: #fff;
   border-radius: 3px;
+}
+
+h4 {
+  color: rgba(202, 11, 11, 0.782);
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
