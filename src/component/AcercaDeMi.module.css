@@ -7,6 +7,15 @@
   width: 90%;
   margin: 0 auto;
   margin-top: 10px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 68, 0, 0.8);
 }
 
 .profile__title__container {
@@ -24,10 +33,25 @@
   border-top-left-radius: 3px;
   border-bottom-right-radius: 3px;
   padding: 5px;
+  animation: moveimag 1.5s;
+}
+
+@keyframes moveimag {
+  from {
+    transform: translateX(-220%);
+    border-radius: 100%;
+  }
 }
 
 .title_container {
   width: 50%;
+  animation: movetitle 1.5s;
+}
+
+@keyframes movetitle {
+  from {
+    transform: translateX(150%);
+  }
 }
 
 .image__title {
@@ -45,14 +69,48 @@
 }
 
 .network_icon {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin: 5px;
+  animation: icon 4s;
+}
+
+@keyframes icon {
+  0% {
+    transform: scale(0.5);
+    width: 15.2px;
+    height: 70px;
+  }
+  20% {
+    transform: scale(1);
+    width: 70px;
+    height: 15.2px;
+  }
+  30% {
+    transform: scale(0.3);
+    width: 15.2px;
+    height: 70px;
+  }
+  60% {
+    transform: scale(1.3);
+    width: 70px;
+    height: 15.2px;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .skills__container {
   width: 90%;
   margin: 0 auto;
+  animation: moveskill 1.5s;
+}
+
+@keyframes moveskill {
+  from {
+    transform: translateY(150%);
+  }
 }
 
 .skills__title {
