@@ -1,8 +1,6 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-//import AcercaDeMi from "./AcercaDeMi";
-//import Tecnologias from "./Tecnologias";
 import s from "./Nav.module.css";
 
 const Nav = () => {
@@ -66,18 +64,9 @@ const Nav = () => {
             </div>
           </nav>
         </section>
-        {/* <section>
-          <div
-            className={isOpen ? s.slide__content : s.slide__content__retract}
-          >
-            <AcercaDeMi />
-          </div>
-        </section> */}
-        {/* <section>
-          <div>
-            <Tecnologias />
-          </div>
-        </section> */}
+        <section>
+          <div className={s.overlay}></div>
+        </section>
       </div>
     </main>
   );

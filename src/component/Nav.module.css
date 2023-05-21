@@ -9,6 +9,22 @@
   margin-top: 10px;
 }
 
+.overlay {
+  width: 90%;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  animation: over 0.5s forwards;
+  background-color: rgba(11, 11, 11, 0.898);
+}
+
+@keyframes over {
+  100% {
+    transform: translateY(-110%);
+  }
+}
+
 .nav__container {
   background-color: steelblue;
   display: flex;
