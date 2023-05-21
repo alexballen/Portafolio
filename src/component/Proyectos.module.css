@@ -18,6 +18,13 @@
 .proyect__title__container {
   background-color: rgba(255, 68, 0, 0.8);
   border-radius: 3px;
+  animation: title 1.5s;
+}
+
+@keyframes title {
+  from {
+    transform: scale(10%);
+  }
 }
 
 .proyect__title {
