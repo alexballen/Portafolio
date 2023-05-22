@@ -44,11 +44,13 @@ const Proyectos = () => {
                     <div className={s.proyect_text_container}>
                       <p className={s.proyect__image__text}>{imag.text}</p>
                       <a href={imag.linkgithub} target={imag.target}>
-                        <img
-                          className={s.text_icon}
-                          src={github}
-                          alt="icon github"
-                        />
+                        <div className={s.text_icon_container}>
+                          <img
+                            className={s.text_icon}
+                            src={github}
+                            alt="icon github"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div className={s.image__overlay}>
