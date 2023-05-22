@@ -11,8 +11,15 @@
 }
 
 .contact__title__container {
-  background-color: rgba(255, 68, 0, 0.8);
+  background-color: #ff731d;
   border-radius: 3px;
+  animation: title 1.5s;
+}
+
+@keyframes title {
+  from {
+    transform: scale(10%);
+  }
 }
 
 .contact__title {
@@ -23,7 +30,7 @@
 }
 
 .contact__form__container {
-  background-color: steelblue;
+  background-color: #025464;
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -63,7 +70,7 @@ textarea {
 }
 
 .button {
-  background-color: rgba(255, 68, 0, 0.8);
+  background-color: #ff731d;
   font-size: 25px;
   color: #fff;
   border-radius: 3px;

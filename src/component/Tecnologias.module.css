@@ -10,7 +10,7 @@
 }
 
 .technologies__title__container {
-  background-color: rgba(255, 68, 0, 0.8);
+  background-color: #ff731d;
   border-radius: 3px;
   animation: title 1.5s;
 }
