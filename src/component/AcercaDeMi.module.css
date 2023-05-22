@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 68, 0, 0.8);
+  background-color: #ff731d;
 }
 
 .profile__title__container {
@@ -28,18 +28,49 @@
 .title__image {
   width: 200px;
   height: 250px;
+  border: solid #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  padding: 5px;
-  animation: moveimag 1.5s;
+  margin: 3px;
+  animation: move 1.5s, line1 2s infinite, line2 2s infinite 1s;
 }
 
-@keyframes moveimag {
+@keyframes move {
   from {
     transform: translateX(-220%);
     border-radius: 100%;
+  }
+}
+
+@keyframes line1 {
+  25% {
+    border-top: solid #025464 3px;
+  }
+  50% {
+    border-right: solid #025464 3px;
+  }
+  75% {
+    border-bottom: solid #025464 3px;
+  }
+  100% {
+    border-left: solid #025464 3px;
+  }
+}
+
+@keyframes line2 {
+  25% {
+    border-top: solid #ff731d 3px;
+  }
+  50% {
+    border-right: solid #ff731d 3px;
+  }
+  75% {
+    border-bottom: solid #ff731d 3px;
+  }
+  100% {
+    border-left: solid #ff731d 3px;
   }
 }
 
@@ -58,7 +89,7 @@
   font-size: 30px;
   color: #fff;
   text-align: center;
-  background-color: rgba(255, 68, 0, 0.8);
+  background-color: #ff731d;
   border-radius: 3px;
 }
 
