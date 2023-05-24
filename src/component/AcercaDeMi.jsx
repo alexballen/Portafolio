@@ -9,6 +9,7 @@ const AcercaDeMi = () => {
   return (
     <main>
       <div className={s.container}>
+        <div className={s.background_title_image}></div>
         <section>
           <header>
             <div className={s.profile__title__container}>
@@ -16,7 +17,7 @@ const AcercaDeMi = () => {
                 <img
                   className={s.title__image}
                   src={fotoPerfil}
-                  alt="Imagen de perfil"
+                  alt="Profile image"
                 />
               </figure>
               <div className={s.title_container}>

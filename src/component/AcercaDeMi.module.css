@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Cutive+Mono&family=Forum&family=Lato:wght@300&display=swap");
+
 * {
   margin: 0px;
   box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Cutive Mono", monospace; */
+  /* font-family: "Barlow", sans-serif; */
+  font-family: "Lato", sans-serif;
+  /* font-family: "Forum", cursive; */
 }
 
 .container {
@@ -8,6 +17,28 @@
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
+  position: relative;
+}
+
+.background_title_image {
+  width: 60%;
+  height: 150px;
+  background-color: #025464;
+  position: absolute;
+  top: 25px;
+  left: 5%;
+  box-shadow: 4px 4px 4px #ff731d;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  animation: topmove 3s;
+}
+
+@keyframes topmove {
+  from {
+    transform: translateY(-250px);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -23,6 +54,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 .title__image {
@@ -103,7 +135,14 @@
   width: 35px;
   height: 35px;
   margin: 5px;
+  border-radius: 50%;
   animation: icon 4s;
+}
+
+.network_icon:hover {
+  transition: 1s;
+  transform: scale(130%);
+  box-shadow: 0px 0px 13px #ff731d;
 }
 
 @keyframes icon {
@@ -161,6 +200,11 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .background_title_image {
+    width: 80%;
+    top: 15px;
+  }
+
   .title__image {
     width: 150px;
     height: 200px;
@@ -182,6 +226,11 @@ hr {
 }
 
 @media (max-width: 425px) {
+  .background_title_image {
+    width: 80%;
+    top: 85px;
+  }
+
   .profile__title__container {
     display: flex;
     flex-direction: column;
