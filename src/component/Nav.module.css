@@ -52,6 +52,11 @@
   width: 80%;
 }
 
+.menu__item:hover .menu__link {
+  border-bottom: solid #ff731d 1px;
+  box-shadow: 0px 0px 10px #ff731d;
+}
+
 .menu__link {
   text-decoration: none;
   color: #fff;
