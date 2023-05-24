@@ -72,6 +72,7 @@ textarea {
 .button {
   background-color: #ff731d;
   font-size: 25px;
+  font-family: inherit;
   color: #fff;
   border-radius: 3px;
 }
