@@ -99,6 +99,7 @@
 }
 
 .text_icon_container:hover .text_icon {
+  transition: 1.5s;
   transform: rotate(180deg);
   background-color: #ff731d;
 }
