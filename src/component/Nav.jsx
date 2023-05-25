@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import DarkMode from "./DarkMode";
 import s from "./Nav.module.css";
 
 const Nav = () => {
@@ -31,7 +32,7 @@ const Nav = () => {
                       className={s.hamburguer__icon}
                     />
                   ) : (
-                    <MenuIcon fontSize="large" />
+                    <MenuIcon />
                   )}
                 </div>
               </figure>
@@ -60,6 +61,9 @@ const Nav = () => {
                     Contacto
                   </a>
                 </div>
+              </div>
+              <div>
+                <DarkMode />
               </div>
             </div>
           </nav>
