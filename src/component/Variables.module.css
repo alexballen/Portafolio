@@ -1,0 +1,17 @@
+:root {
+  --background-color-body: #fff;
+  --background-color-container: #fff;
+  --background-color-blue: #025464;
+  --background-color-orange: #ff731d;
+  --white-text-color: #fff;
+  --black-text-color: black;
+}
+
+.dark_mode {
+  --background-color-body: rgb(38, 38, 38);
+  --background-color-container: #212020;
+  --background-color-blue: #025464;
+  --background-color-orange: #ff731d;
+  --white-text-color: #fff;
+  --black-text-color: #fff;
+}
