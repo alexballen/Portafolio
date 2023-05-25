@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import DarkModeContext from "./DarkModeContext";
 import fotoPerfil from "../assets/perfil.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
@@ -6,9 +8,12 @@ import whatsapp from "../assets/whatsapp.png";
 import s from "./AcercaDeMi.module.css";
 
 const AcercaDeMi = () => {
+  const { darkMode } = useContext(DarkModeContext);
+  console.log(darkMode);
+
   return (
     <main>
-      <div className={s.container}>
+      <div className={`${s.container} ${darkMode ? s.dark_mode : ""}`}>
         <div className={s.background_title_image}></div>
         <section>
           <header>
