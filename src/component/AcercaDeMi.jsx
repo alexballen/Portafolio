@@ -3,18 +3,18 @@ import DarkModeContext from "./DarkModeContext";
 import fotoPerfil from "../assets/perfil.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
+import github1 from "../assets/github1.png";
 import gmail from "../assets/gmail.png";
 import whatsapp from "../assets/whatsapp.png";
 import s from "./AcercaDeMi.module.css";
 
 const AcercaDeMi = () => {
   const { darkMode } = useContext(DarkModeContext);
-  console.log(darkMode);
 
   return (
     <main>
       <div className={`${s.container} ${darkMode ? s.dark_mode : ""}`}>
-        <div className={s.background_title_image}></div>
+        <div className={s.title_image_background}></div>
         <section>
           <header>
             <div className={s.profile__title__container}>
@@ -50,7 +50,7 @@ const AcercaDeMi = () => {
                   >
                     <img
                       className={s.network_icon}
-                      src={github}
+                      src={darkMode ? github : github1}
                       alt="icono github"
                     />
                   </a>
