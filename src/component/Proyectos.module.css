@@ -1,3 +1,5 @@
+@import "./Variables.module.css";
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -8,6 +10,15 @@
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
+  background-color: var(--background-color-container);
+  padding-bottom: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.dark_mode .container {
+  background-color: var(--background-color-container);
 }
 
 .proyect__container {
@@ -16,9 +27,13 @@
 }
 
 .proyect__title__container {
-  background-color: #ff731d;
+  background-color: var(--background-color-title);
   border-radius: 3px;
   animation: title 1.5s;
+}
+
+.dark_mode .proyect__title__container {
+  background-color: var(--background-color-title);
 }
 
 @keyframes title {
@@ -30,7 +45,7 @@
 .proyect__title {
   font-size: 30px;
   margin-left: 10px;
-  color: #fff;
+  color: var(--background-white);
 }
 
 .proyect__images__container {
@@ -43,12 +58,16 @@
 
 .proyect__image__container {
   border-radius: 1em;
-  background-color: #ff731d;
+  background-color: var(--background-color-title);
   position: relative;
   box-shadow: 0 0 13px;
   width: 450px;
   overflow: hidden;
   animation: image 1.5s;
+}
+
+.dark_mode .proyect__image__container {
+  background-color: var(--background-color-title);
 }
 
 @keyframes image {
@@ -72,7 +91,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #025464;
+  background-color: var(--background-blue);
 }
 
 .proyect__image__container:hover .proyect__image {
@@ -82,7 +101,7 @@
 .proyect__image__text {
   border-radius: 0 0 1em 1em;
   padding: 10px;
-  color: #fff;
+  color: var(--background-white);
   font-size: 1.5rem;
   text-align: center;
 }
@@ -101,7 +120,11 @@
 .text_icon_container:hover .text_icon {
   transition: 1.5s;
   transform: rotate(180deg);
-  background-color: #ff731d;
+  background-color: var(--background-color-title);
+}
+
+.dark_mode .text_icon_container:hover .text_icon {
+  background-color: var(--background-color-title);
 }
 
 .image__overlay {
@@ -109,7 +132,7 @@
   position: absolute;
   bottom: 100px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.508);
+  background-color: var(--image-overlay-backgraund);
   transition: transform 0.5s;
   transform: translateX(100%);
   display: flex;
@@ -125,7 +148,7 @@
 
 .image__link {
   text-decoration: none;
-  color: #fff;
+  color: var(--background-white);
   font-size: 2.5rem;
   transition: transform 2.5s;
 }

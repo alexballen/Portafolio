@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import DarkModeContext from "./DarkModeContext";
 import pi from "../assets/PI.png";
 import pf from "../assets/PF.png";
 import github from "../assets/github.png";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const images = [
     {
       image: pf,
@@ -24,7 +28,7 @@ const Proyectos = () => {
   ];
   return (
     <main>
-      <div className={s.container}>
+      <div className={`${s.container} ${darkMode ? s.dark_mode : ""}`}>
         <section>
           <div className={s.proyect__container}>
             <header>
