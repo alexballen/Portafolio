@@ -1,17 +1,27 @@
 :root {
+  /* Colores fijos */
+  --background-white: #fff;
+  --background-blue: #025464;
+  --background-orange: #ff731d;
+  --box-shadow-black: #121212;
+  --error-text: rgb(61, 18, 18);
+  --image-overlay-backgraund: rgba(0, 0, 0, 0.508);
+
+  /* Colores dinamicos para Dark Mode */
   --background-color-body: #fff;
   --background-color-container: #fff;
-  --background-color-blue: #025464;
-  --background-color-orange: #ff731d;
-  --white-text-color: #fff;
+  --background-color-title: #ff731d;
+  --box-shadow-background: #ff731d;
   --black-text-color: black;
+  --input-background: #fff;
 }
 
 .dark_mode {
-  --background-color-body: rgb(38, 38, 38);
-  --background-color-container: #212020;
-  --background-color-blue: #025464;
-  --background-color-orange: #ff731d;
-  --white-text-color: #fff;
+  /* Colores dinamicos para Dark Mode */
+  --background-color-body: black;
+  --background-color-container: #1a1919;
+  --background-color-title: #b94700bf;
+  --box-shadow-background: #b94700bf;
   --black-text-color: #fff;
+  --input-background: #262525;
 }
