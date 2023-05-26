@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import DarkModeContext from "./DarkModeContext.jsx";
 import {
   handleSubmit,
   validatorSubmit,
@@ -15,13 +16,14 @@ const Contacto = () => {
   });
 
   const [error, setError] = useState({});
-  console.log(error);
+
+  const { darkMode } = useContext(DarkModeContext);
 
   const { name, email, message } = formContact;
 
   return (
     <main>
-      <div className={s.container}>
+      <div className={`${s.container} ${darkMode ? s.dark_mode : ""}`}>
         <section>
           <div className={s.contact__cantainer}>
             <header>
