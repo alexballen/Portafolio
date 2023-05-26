@@ -1,3 +1,5 @@
+@import "./Variables.module.css";
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -7,12 +9,25 @@
   width: 90%;
   margin: 0 auto;
   margin-top: 10px;
+  background-color: var(--background-color-container);
+  padding-bottom: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.dark_mode .container {
+  background-color: var(--background-color-container);
 }
 
 .technologies__title__container {
-  background-color: #ff731d;
+  background-color: var(--background-color-title);
   border-radius: 3px;
   animation: title 1.5s;
+}
+
+.dark_mode .technologies__title__container {
+  background-color: var(--background-color-title);
 }
 
 @keyframes title {
@@ -24,7 +39,7 @@
 .technologies__title {
   font-size: 30px;
   margin-left: 10px;
-  color: #fff;
+  color: var(--background-white);
 }
 
 .technologies__icons__container {
@@ -54,12 +69,25 @@
   padding: 5px;
 }
 
+.technologies__text {
+  color: var(--black-text-color);
+}
+
+.dark_mode .technologies__text {
+  color: var(--black-text-color);
+}
+
 .technologies__icon__container:hover .technologies__icon {
   transition: 1.5s;
   transform: scale(130%);
   border-radius: 10%;
-  box-shadow: 0px 0px 13px #ff731d;
-  background: #ff731d;
+  box-shadow: 0px 0px 13px var(--box-shadow-background);
+  background: var(--background-color-title);
+}
+
+.dark_mode .technologies__icon__container:hover .technologies__icon {
+  box-shadow: 0px 0px 13px var(--box-shadow-background);
+  background: var(--background-color-title);
 }
 
 @media (max-width: 768px) {

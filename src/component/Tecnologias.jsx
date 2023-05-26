@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import DarkModeContext from "./DarkModeContext";
 import iconhtml from "../assets/html.png";
 import iconcss from "../assets/css.png";
 import iconjs from "../assets/js.png";
@@ -13,6 +15,8 @@ import icontrello from "../assets/trello.png";
 import s from "./Tecnologias.module.css";
 
 const Tecnologias = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const icons = [
     {
       image: iconhtml,
@@ -102,7 +106,7 @@ const Tecnologias = () => {
 
   return (
     <main>
-      <div className={s.container}>
+      <div className={`${s.container} ${darkMode ? s.dark_mode : ""}`}>
         <section>
           <div className={s.technologies__container}>
             <header>
@@ -121,7 +125,7 @@ const Tecnologias = () => {
                         alt={icon.alt}
                       />
                     </a>
-                    <p>{icon.text}</p>
+                    <p className={s.technologies__text}>{icon.text}</p>
                   </div>
                 ))}
               </div>
