@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Cutive+Mono&family=Forum&family=Lato:wght@300&display=swap");
+
+@import "./component/Variables.module.css";
+
+body {
+  /* font-family: "Cutive Mono", monospace; */
+  /* font-family: "Barlow", sans-serif; */
+  /* font-family: "Forum", cursive; */
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-color-body);
+}
+
+body.dark_mode {
+  background-color: var(--background-color-body);
+}
+
+body.dark_mode.dark_body {
+  /* color: #fff; */
+  background-color: var(--background-color-body);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--scrollbar-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
