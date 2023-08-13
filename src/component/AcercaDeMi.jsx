@@ -90,18 +90,17 @@ const AcercaDeMi = () => {
               <p className={s.skills__title}>Siempre</p>
             </header>
             <p className={s.skills__paragraph}>
-              Me llamo la atención el desarrollo, laborando en el mundo IT como
-              Analista de Soporte encontré gusto por la programación y bueno
-              decidí apostar por este camino y aquí estoy ya graduado del
-              Bootcamp Henry, con ganas de encontrar mi primer labor en este
-              rubro, graduado también como Tecnólogo en Administración de Redes
-              de Computadores, soy una persona con capacidad de Adaptabilidad,
-              buenas Relaciones Interpersonales, Responsabilidad, con
-              conocimientos en Tecnologías que me han permitido adquirir
-              experiencia en el desarrollo y en este camino proporcionándome el
-              mejorar mis habilidades de Autodidacta, Colaboración, Trabajo en
-              equipo e Individual, creando en mi esa curiosidad por aprender en
-              cada paso.
+              Mi viaje profesional ha sido un camino apasionante que me ha
+              llevado desde un inicio en Soporte Técnico hasta mi título como
+              Desarrollador graduado del Bootcamp Henry. Con una base sólida en
+              Tecnología en Administración de Redes de Computadores, he forjado
+              un camino en el mundo del desarrollo de software, impulsado por
+              una curiosidad insaciable y un enfoque autodidacta. Mi capacidad
+              de adaptación, habilidades en colaboración y trabajo en equipo,
+              junto con mi constante deseo de aprender, me han permitido crecer
+              y evolucionar en esta emocionante industria. Estoy emocionado por
+              seguir contribuyendo, innovando y creando soluciones
+              significativas mientras avanzo en mi carrera en el desarrollo.
             </p>
           </div>
         </section>
