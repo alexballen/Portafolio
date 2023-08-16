@@ -2,6 +2,7 @@ import { useContext } from "react";
 import DarkModeContext from "./DarkModeContext";
 import pi from "../assets/PI.png";
 import pf from "../assets/PF.png";
+import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
 import s from "./Proyectos.module.css";
 
@@ -9,6 +10,14 @@ const Proyectos = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const images = [
+    {
+      image: portafolio,
+      alt: "portafolio",
+      text: "Portafolio",
+      link: "https://portafolioalexballen.netlify.app",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/Portafolio",
+    },
     {
       image: pf,
       alt: "proyecto final",
