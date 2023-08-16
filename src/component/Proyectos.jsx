@@ -4,12 +4,21 @@ import pi from "../assets/PI.png";
 import pf from "../assets/PF.png";
 import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
+import anotalo from "../assets/anotalo.png";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const images = [
+    {
+      image: anotalo,
+      alt: "anotalo",
+      text: "Anotalo",
+      link: "https://anotalo.netlify.app",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/AnotaloServer",
+    },
     {
       image: portafolio,
       alt: "portafolio",
