@@ -6,6 +6,8 @@ import github from "../assets/github.png";
 import github1 from "../assets/github1.png";
 import gmail from "../assets/gmail.png";
 import whatsapp from "../assets/whatsapp.png";
+import cv from "../assets/Alexander Ballen - Full Stack Developer.pdf";
+import cvdownload from "../assets/cvdownload.jpg";
 import s from "./AcercaDeMi.module.css";
 
 const AcercaDeMi = () => {
@@ -31,6 +33,13 @@ const AcercaDeMi = () => {
                   Desarrollador Web FrontEnd / BackEnd
                 </p>
                 <div className={s.icons_container}>
+                  <a href={cv} target="_blank" rel="noreferrer">
+                    <img
+                      className={s.network_icon}
+                      src={cvdownload}
+                      alt="icono cvdownload"
+                    />
+                  </a>
                   <a
                     href="https://www.linkedin.com/in/alexballen/"
                     target="_blank"
