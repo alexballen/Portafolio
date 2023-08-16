@@ -64,6 +64,7 @@
   width: 450px;
   overflow: hidden;
   animation: image 1.5s;
+  margin-top: 20px;
 }
 
 .dark_mode .proyect__image__container {
