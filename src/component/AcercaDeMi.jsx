@@ -99,17 +99,18 @@ const AcercaDeMi = () => {
               <p className={s.skills__title}>Siempre</p>
             </header>
             <p className={s.skills__paragraph}>
-              Mi viaje profesional ha sido un camino apasionante que me ha
-              llevado desde un inicio en Soporte Técnico hasta mi título como
-              Desarrollador graduado del Bootcamp Henry. Con una base sólida en
-              Tecnología en Administración de Redes de Computadores, he forjado
-              un camino en el mundo del desarrollo de software, impulsado por
-              una curiosidad insaciable y un enfoque autodidacta. Mi capacidad
-              de adaptación, habilidades en colaboración y trabajo en equipo,
-              junto con mi constante deseo de aprender, me han permitido crecer
-              y evolucionar en esta emocionante industria. Estoy emocionado por
-              seguir contribuyendo, innovando y creando soluciones
-              significativas mientras avanzo en mi carrera en el desarrollo.
+              Mi viaje profesional ha sido un camino apasionante, llevándome
+              desde mis inicios en Soporte Técnico hasta obtener mi título como
+              Desarrollador graduado del Bootcamp Henry. Con una sólida base en
+              Tecnología en Administración de Redes de Computadores, estoy
+              comprometido a trazar mi propio camino en el mundo del desarrollo
+              de software. Me impulsa una curiosidad insaciable y un enfoque
+              autodidacta. Mi capacidad de adaptación, habilidades para la
+              colaboración y el trabajo en equipo, junto con mi constante deseo
+              de aprendizaje, espero que me permitan crecer y evolucionar en
+              esta emocionante industria. Estoy entusiasmado por continuar
+              contribuyendo, innovando y creando soluciones significativas a
+              medida que avanzo en mi carrera en el desarrollo.
             </p>
           </div>
         </section>
