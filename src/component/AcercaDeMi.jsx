@@ -7,7 +7,7 @@ import github1 from "../assets/github1.png";
 import gmail from "../assets/gmail.png";
 import whatsapp from "../assets/whatsapp.png";
 import cv from "../assets/Alexander Ballen - Full Stack Developer.pdf";
-import cvdownload from "../assets/cvdownload.jpg";
+import cvdownload from "../assets/cvdownload.png";
 import s from "./AcercaDeMi.module.css";
 
 const AcercaDeMi = () => {
