@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import DarkModeContext from "./DarkModeContext";
+import PopUpDescriptions from "./PopUpDescriptions";
 import pi from "../assets/PI.png";
 import pf from "../assets/PF.png";
 import portafolio from "../assets/portafolio.png";
@@ -74,6 +75,9 @@ const Proyectos = () => {
                           />
                         </div>
                       </a>
+                      <div>
+                        <PopUpDescriptions />
+                      </div>
                     </div>
                     <div className={s.image__overlay}>
                       <a
