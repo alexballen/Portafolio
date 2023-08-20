@@ -6,6 +6,7 @@ import pf from "../assets/PF.png";
 import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
+import AnotaloParagraph from "./AnotaloParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
@@ -19,6 +20,7 @@ const Proyectos = () => {
       link: "https://anotalo.netlify.app",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/AnotaloServer",
+      paragraph: <AnotaloParagraph />,
     },
     {
       image: portafolio,
@@ -27,6 +29,7 @@ const Proyectos = () => {
       link: "https://portafolioalexballen.netlify.app",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/Portafolio",
+      paragraph: "Descripcion de portafolio",
     },
     {
       image: pf,
@@ -35,6 +38,7 @@ const Proyectos = () => {
       link: "https://hcouture-38643.web.app/",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/pf-ecommerce-ft30b-frontend",
+      paragraph: "Descripcion de proyecto final",
     },
     {
       image: pi,
@@ -43,6 +47,7 @@ const Proyectos = () => {
       link: "https://countriesapp-r8zi.onrender.com/",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/Countries-Client",
+      paragraph: `Descripcion de proyecto individual ln nuevo `,
     },
   ];
   return (
@@ -76,7 +81,7 @@ const Proyectos = () => {
                         </div>
                       </a>
                       <div>
-                        <PopUpDescriptions />
+                        <PopUpDescriptions Paragraph={imag.paragraph} />
                       </div>
                     </div>
                     <div className={s.image__overlay}>
