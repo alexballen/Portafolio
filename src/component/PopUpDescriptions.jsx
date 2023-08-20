@@ -3,7 +3,7 @@ import { TfiHelpAlt } from "react-icons/tfi";
 import { SlClose } from "react-icons/sl";
 import s from "./PopUpDescriptions.module.css";
 
-const PopUpDescriptions = () => {
+const PopUpDescriptions = ({ Paragraph }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   const openPopup = () => {
@@ -23,7 +23,7 @@ const PopUpDescriptions = () => {
         <div className={s.closed_container}>
           <SlClose className={s.closed} onClick={closePopup} />
         </div>
-        {/*  <Component /> */}
+        <p>{Paragraph}</p>
       </div>
     </main>
   );
