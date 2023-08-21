@@ -7,6 +7,7 @@ import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
 import AnotaloParagraph from "./AnotaloParagraph";
+import PortafolioParagraph from "./PortafolioParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
@@ -29,7 +30,7 @@ const Proyectos = () => {
       link: "https://portafolioalexballen.netlify.app",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/Portafolio",
-      paragraph: "Descripcion de portafolio",
+      paragraph: <PortafolioParagraph />,
     },
     {
       image: pf,
