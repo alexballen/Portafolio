@@ -23,7 +23,7 @@ const PopUpDescriptions = ({ Paragraph }) => {
         <div className={s.closed_container}>
           <SlClose className={s.closed} onClick={closePopup} />
         </div>
-        <p>{Paragraph}</p>
+        <div>{Paragraph}</div>
       </div>
     </main>
   );
