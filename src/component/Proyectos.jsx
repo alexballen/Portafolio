@@ -8,6 +8,7 @@ import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
 import AnotaloParagraph from "./AnotaloParagraph";
 import PortafolioParagraph from "./PortafolioParagraph";
+import PFParagraph from "./PFParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
@@ -39,7 +40,7 @@ const Proyectos = () => {
       link: "https://hcouture-38643.web.app/",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/pf-ecommerce-ft30b-frontend",
-      paragraph: "Descripcion de proyecto final",
+      paragraph: <PFParagraph />,
     },
     {
       image: pi,
