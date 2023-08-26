@@ -9,6 +9,7 @@ import anotalo from "../assets/anotalo.png";
 import AnotaloParagraph from "./AnotaloParagraph";
 import PortafolioParagraph from "./PortafolioParagraph";
 import PFParagraph from "./PFParagraph";
+import PIParagraph from "./PIParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
@@ -49,7 +50,7 @@ const Proyectos = () => {
       link: "https://countriesapp-r8zi.onrender.com/",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/Countries-Client",
-      paragraph: `Descripcion de proyecto individual ln nuevo `,
+      paragraph: <PIParagraph />,
     },
   ];
   return (
