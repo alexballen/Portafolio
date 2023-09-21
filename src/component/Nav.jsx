@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import DarkMode from "./DarkMode";
@@ -42,24 +43,24 @@ const Nav = () => {
                 }`}
               >
                 <div className={s.menu__item}>
-                  <a className={s.menu__link} href="/">
+                  <Link to="/" className={s.menu__link}>
                     Acerca de mí
-                  </a>
+                  </Link>
                 </div>
                 <div onClick={() => closeMenu()} className={s.menu__item}>
-                  <a className={s.menu__link} href="/tecnologias">
+                  <Link to="/tecnologias" className={s.menu__link}>
                     Tecnologias
-                  </a>
+                  </Link>
                 </div>
                 <div onClick={() => closeMenu()} className={s.menu__item}>
-                  <a className={s.menu__link} href="/proyectos">
+                  <Link to="/proyectos" className={s.menu__link}>
                     Proyectos
-                  </a>
+                  </Link>
                 </div>
                 <div className={s.menu__item}>
-                  <a className={s.menu__link} href="/contacto">
+                  <Link to="/contacto" className={s.menu__link}>
                     Contacto
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
