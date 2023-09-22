@@ -6,16 +6,27 @@ import pf from "../assets/PF.png";
 import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
+import upskillingJAVA from "../assets/upskillingJAVA.png";
 import AnotaloParagraph from "./AnotaloParagraph";
 import PortafolioParagraph from "./PortafolioParagraph";
 import PFParagraph from "./PFParagraph";
 import PIParagraph from "./PIParagraph";
+import UpskillingJAVAParagraph from "./UpskillingJAVAParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const images = [
+    {
+      image: upskillingJAVA,
+      alt: "upskilling java",
+      text: "Upskilling JAVA",
+      link: "https://certificates.soyhenry.com/new-cert?id=e337dd6522ba4ed29b12cc45398a7bd86ca70091dd81ff237ad951eba2312314",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/JAVA",
+      paragraph: <UpskillingJAVAParagraph />,
+    },
     {
       image: anotalo,
       alt: "anotalo",
