@@ -7,17 +7,28 @@ import portafolio from "../assets/portafolio.png";
 import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
 import upskillingJAVA from "../assets/upskillingJAVA.png";
+import upskillingMicroservicios from "../assets/upskillingMicroservicios.png";
 import AnotaloParagraph from "./AnotaloParagraph";
 import PortafolioParagraph from "./PortafolioParagraph";
 import PFParagraph from "./PFParagraph";
 import PIParagraph from "./PIParagraph";
 import UpskillingJAVAParagraph from "./UpskillingJAVAParagraph";
+import UpskillingMicroserviciosParagraph from "./UpskillingMicroserviciosParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const images = [
+    {
+      image: upskillingMicroservicios,
+      alt: "upskilling microservicios",
+      text: "Upskilling Microservicios",
+      link: "https://certificates.soyhenry.com/new-cert?id=56687bba8d5b75995d38cdb8c716a00bca7fa48ffa5bd57ce5744041dc7f5344",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/microservices",
+      paragraph: <UpskillingMicroserviciosParagraph />,
+    },
     {
       image: upskillingJAVA,
       alt: "upskilling java",
@@ -58,7 +69,7 @@ const Proyectos = () => {
       image: pi,
       alt: "proyecto individual",
       text: "Proyecto Individual",
-      link: "https://countriesapp-r8zi.onrender.com/",
+      link: "https://countriesabm.netlify.app/",
       target: "_blank",
       linkgithub: "https://github.com/alexballen/Countries-Client",
       paragraph: <PIParagraph />,
