@@ -12,19 +12,25 @@ const PortafolioParagraph = () => {
         <section>
           <div className={s.paragraph_container}>
             <p className={s.introductory_paragraph}>
-              Portafolio es una aplicación web ...
+              ¡Explora mi mundo creativo y profesional a través de mi portafolio
+              en línea! Esta aplicación está diseñada para destacar mis
+              habilidades, proyectos y logros de una manera interactiva y
+              atractiva.
             </p>
             <p>
-              La aplicación cuenta con un diseño totalmente adaptable
-              Responsive.
+              Utilizando las últimas tecnologías web, he construido este
+              portafolio para presentar mi trabajo de manera única y
+              cautivadora.
             </p>
-            <p>Tecnologías utilizadas:</p>
             <p>
-              Frontend: Vite, React, react-icons, react-tooltip,
-              sweetalert2,react-hook-form.
+              Mi portafolio cuenta con un diseño moderno y atractivo que muestra
+              mi estilo personal y profesional.
             </p>
-            <p>Características destacadas de la aplicación:</p>
-            <p></p>
+            <p>
+              Tecnologías: - Vite, React, React-icons, @emailjs/browser para el
+              envió de correo electrónico desde mi formulario de contacto. -
+              Diseño Responsive. - Modo oscuro.
+            </p>
           </div>
         </section>
       </div>
