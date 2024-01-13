@@ -6,45 +6,33 @@ const PIParagraph = () => {
       <div className={s.container}>
         <section>
           <div className={s.title_container}>
-            <p>Web App Anotalo</p>
+            <p>Countries App proyecto individual</p>
           </div>
         </section>
         <section>
           <div className={s.paragraph_container}>
             <p className={s.introductory_paragraph}>
-              Anótalo es una aplicación web diseñada para simplificar tu vida
-              mediante la creación y gestión de notas. Esta intuitiva aplicación
-              te permite crear y organizar tus notas de manera eficiente,
-              asignándoles recordatorios personalizados y clasificándolas según
-              su importancia, todo bajo tu criterio único. Además, cuenta con
-              funciones de filtros combinados y búsqueda por título.
+              Diseño y desarrollo de una API Restful de países, que presenta
+              diversas tarjetas informativas sobre cada país. Incluye la
+              creación de actividades que abarcan aspectos como el nombre,
+              dificultad, duración, y el tipo de clima o tiempo característico
+              del país y el pais o paises que realizan dicha actividad.
             </p>
             <p>
-              La aplicación cuenta con un diseño totalmente adaptable
-              Responsive.
-            </p>
-            <p>Tecnologías utilizadas:</p>
-            <p>
-              Frontend: Vite, React, Redux, dayjs, lodash, react-icons,
-              react-tooltip, sweetalert2, date-fns, react-hook-form.
-            </p>
-            <p>Backend: JWT, bcryptjs, dayjs, ejs, nodemailer, express.</p>
-            <p>Características destacadas de la aplicación:</p>
-            <p>- Autenticación local y a través de Google.</p>
-            <p>- Notificaciones para nuevos usuarios.</p>
-            <p>- Validación de cuentas de nuevos usuarios.</p>
-            <p>- Recuperación de contraseña.</p>
-            <p>- Perfil de usuario.</p>
-            <p>- Recordatorios para notas.</p>
-            <p>
-              - Notificaciones por correo electrónico para recordatorios
-              configurados.
+              La aplicación está construida en el backend utilizando NodeJS,
+              Express, y bases de datos PostgreSQL con Sequelize.
             </p>
             <p>
-              - Filtros de ordenamiento A-Z y Z-A, filtrado por importancia y
-              búsqueda por título.
+              En el frontend, la aplicación está desarrollada con React, Redux,
+              y CSS, y cuenta con un diseño completamente adaptable y
+              responsive.
             </p>
-            <p>- Edición y eliminación de notas.</p>
+            <p>
+              La interfaz ofrece diversas funcionalidades, como filtros de
+              ordenamiento A-Z y Z-A, filtrado por población máxima o mínima,
+              búsqueda por actividades específicas creadas en cada país,
+              filtrado por continentes y búsqueda por título del país.
+            </p>
           </div>
         </section>
       </div>
