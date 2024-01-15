@@ -8,18 +8,40 @@ import github from "../assets/github.png";
 import anotalo from "../assets/anotalo.png";
 import upskillingJAVA from "../assets/upskillingJAVA.png";
 import upskillingMicroservicios from "../assets/upskillingMicroservicios.png";
+import nearestNumber from "../assets/nearestNumber.png";
+import threeConsecutive from "../assets/threeConsecutive.png";
 import AnotaloParagraph from "./AnotaloParagraph";
 import PortafolioParagraph from "./PortafolioParagraph";
 import PFParagraph from "./PFParagraph";
 import PIParagraph from "./PIParagraph";
 import UpskillingJAVAParagraph from "./UpskillingJAVAParagraph";
 import UpskillingMicroserviciosParagraph from "./UpskillingMicroserviciosParagraph";
+import NearestNumberParagraph from "./NearestNumberParagraph";
+import ThreeConsecutiveParagraph from "./ThreeConsecutiveParagraph";
 import s from "./Proyectos.module.css";
 
 const Proyectos = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const images = [
+    {
+      image: threeConsecutive,
+      alt: "Three Consecutive",
+      text: "Three Consecutive",
+      link: "https://threeconsecutive.netlify.app/",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/multijugadorclienteTc",
+      paragraph: <ThreeConsecutiveParagraph />,
+    },
+    {
+      image: nearestNumber,
+      alt: "Nearest Number",
+      text: "Nearest Number",
+      link: "https://nearestnumber.netlify.app/",
+      target: "_blank",
+      linkgithub: "https://github.com/alexballen/multijugadorcliente",
+      paragraph: <NearestNumberParagraph />,
+    },
     {
       image: upskillingMicroservicios,
       alt: "upskilling microservicios",
