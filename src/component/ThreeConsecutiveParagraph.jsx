@@ -1,4 +1,4 @@
-import s from "./UpskillingJAVAParagraph.module.css";
+import s from "./ThreeConsecutiveParagraph.module.css";
 
 const ThreeConsecutiveParagraph = () => {
   return (
